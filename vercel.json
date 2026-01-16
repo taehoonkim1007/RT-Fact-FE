@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "http://rt-fact-alb-1713072641.ap-northeast-2.elb.amazonaws.com/:path*"
     }
   ]
 }
