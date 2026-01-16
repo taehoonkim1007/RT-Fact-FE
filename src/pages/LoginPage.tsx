@@ -2,7 +2,6 @@ import { useNavigate } from "react-router";
 
 import { User } from "lucide-react";
 
-import { API_BASE_URL } from "@/api/client";
 import { useAuthStore } from "@/stores/authStore";
 
 export const LoginPage = () => {
@@ -10,7 +9,7 @@ export const LoginPage = () => {
   const accessToken = useAuthStore((state) => state.accessToken);
 
   const handleGoogleLogin = () => {
-    window.location.href = `${API_BASE_URL}/api/auth/google`;
+    window.location.href = "/api/auth/google";
   };
 
   const handleContinueAsGuest = () => {

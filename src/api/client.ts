@@ -6,7 +6,7 @@ export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localho
 const API_TIMEOUT_MS = 60000;
 
 export const apiClient = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: "/api",
   timeout: API_TIMEOUT_MS,
   withCredentials: true, // 쿠키 전송/수신 활성화
   headers: {
