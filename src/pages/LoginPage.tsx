@@ -10,7 +10,7 @@ export const LoginPage = () => {
   const accessToken = useAuthStore((state) => state.accessToken);
 
   const handleGoogleLogin = () => {
-    window.location.href = `${API_BASE_URL}/auth/google`;
+    window.location.href = `${API_BASE_URL}/api/auth/google`;
   };
 
   const handleContinueAsGuest = () => {

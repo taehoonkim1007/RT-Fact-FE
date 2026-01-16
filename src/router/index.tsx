@@ -8,7 +8,7 @@ import { PrivateRoute } from "./PrivateRoute";
 export const router = createBrowserRouter([
   // OAuth 콜백은 MainLayout 바깥에서 처리 (세션 초기화 충돌 방지)
   {
-    path: "/auth/callback",
+    path: "/api/auth/callback",
     element: <AuthCallbackPage />,
   },
   {
